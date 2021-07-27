@@ -92,7 +92,19 @@ class EntryPoint
 
         labelemail.SendKeys(email);
         labelpass.SendKeys(psw);
+
+        Thread.Sleep(3000);
+        
+
+        //clear value 
+
+        labelemail.Clear();
+        labelpass.Clear();
+
+        Thread.Sleep(3000);
+
         login.Submit();
+
         driver.Quit();
     }
 
