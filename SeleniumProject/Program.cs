@@ -94,7 +94,12 @@ class EntryPoint
         labelpass.SendKeys(psw);
 
         Thread.Sleep(3000);
-        
+
+        //
+        Console.WriteLine(labelemail.GetAttribute("value"));
+        Console.WriteLine(labelpass.GetAttribute("value"));
+
+
 
         //clear value 
 
